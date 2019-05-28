@@ -1,8 +1,8 @@
+import datetime
 import tensorflow as tf
 
-
 class Model(object):
-    def __init__(self, model_arch, LR, LReps, opt, shape_input, shape_output, dropout):
+    def __init__(self, model_arch, LR, LReps, opt, shape_input, shape_output, dropout,):
         self.model = self.get_model(model_arch, shape_input, shape_output, dropout)
         ###add desired optimizer here
         if opt =='adam':
